@@ -1,0 +1,156 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+nav{
+    margin:15px 0px 15px 40px;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+#menu{
+    margin:0px 300px 0px 60px;
+    font-size: medium;
+}
+img{
+    margin:0px 10px 0px 10px;
+    width:80px;
+    height:70px;
+}
+h2{
+    margin:0px 150px 0px 10px;
+    color:rgb(235, 115, 29);
+}
+#icons{
+    display:flex;
+}
+#icons p{
+    margin:10px;
+    font-size:x-large;
+    color:rgb(235, 115, 29);
+}
+#icons p:hover{
+    color:black;
+    font-size: large;
+}
+#menu a{
+    text-decoration-line: none;
+    font-size: 15px;
+    margin:10px;
+    color:chocolate;
+}
+#menu a:hover{
+    color:black;
+    font-size:20px;
+}
+#container{
+    background:url("images/fuv-min.jpg");
+    height:80%;
+    animation-name:changes;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-play-state:running; 
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}span::before{
+    animation-name:textanimation;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-play-state:running; 
+    content:"favour";
+}#animy{
+    width:500px;
+    height:100px;
+    margin:30px;
+}
+#animyimage{
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    background:black;
+    color:white;
+    font-style: oblique;
+    font-size: larger;
+    font-weight: bold;
+}
+#image{
+    width:500px;
+    height: 300px;
+    margin:0px 0px 0px 450px;
+}
+#teimg{
+    background-image:url(images/muffins-cookies-with-blurred-background-min.jpg);
+    background-size:cover;
+    background-position:center;
+    width:1345px;
+    height:350px;
+    padding-top:130px;
+}
+#p{
+    color:white;
+    font-style: oblique;
+    font-weight: bold;
+    font-size:x-large;
+}
+#empty{
+    margin:0px 0px 90px 0px;
+    width:100px;
+    height:100px;
+}
+#text{
+    width:350px;
+    height:200px;
+    font-family:cursive;
+    font-style: oblique;
+    font-size: large;
+    display:block;
+    justify-items:center;
+    align-items: center;
+    
+}#content{
+    font-style: oblique;
+    font-size: large;
+    margin:15px 0px 0px 40px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:left;
+    align-items:center;
+}
+h3{
+    margin:10px;
+}
+#event{
+    width:300px;
+    padding:20px;
+    font-size: medium;
+    height:350px;
+    margin:30px 30px 0px 30px;
+}
+#contact{
+    width:300px;
+    padding:20px;
+    font-size: medium;
+    height:350px;
+    margin:30px 30px 0px 30px;
+}
+#hours{
+    width:400px;
+    height:300px;
+    margin:30px 30px 0px 30px;
+}
+    @keyframes changes {
+    0%{background-image:url(images/fev-min.jpg);}
+    25%{background-image:url(images/feve-min.jpg);}
+    50%{background-image:url(images/fev-min.jpg);}
+    75%{background-image:url(images/fuv-min.jpg);}
+    100%{background-image:url(images/fiv-min.jpg);}
+    }
+@keyframes textanimation{
+    0%{content: '"What can cake teach you about life? That practice makes perfect, and if you try something once, it probably won’t be perfect, and you have to keep working on it if you want to be good at it.”';}
+    25%{content:"If I was turned into cake..I would eat myself before anyone else could.";}
+    50%{content:"If there’s a cake in front of you, then you shouldn’t look any further for joy!";}
+    75%{content:"Eating cake every day is totally acceptable and justifiable...After all, it’s somebody birthday somewhere in the world.Every day is an opportunity to celebrate";}
+    100%{content:"Every unique individual deserves an equally special cake because Happiness is when you’re having a bad day and it suddenly rains cupcakes...Having a balanced diet means having a piece of cake in both hands.";}
+}
